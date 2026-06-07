@@ -159,16 +159,4 @@ if (adminAge > 0) {
     alert("Помилка: вік адміністратора введено неправильно.");
 }
 
-// Live-coding demo: bind()
-
-const userForBind = {
-    name: "Петро",
-
-    showName() {
-        console.log("Ім'я користувача: " + this.name);
-    }
-};
-
-const show = userForBind.showName.bind(userForBind);
-
 show();
